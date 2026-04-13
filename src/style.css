@@ -471,9 +471,9 @@ figure {
     /* margin-bottom: 5rem; */
     border-radius: .2rem;
     padding: 0 3.2rem;
-    /* position: relative;
-    bottom: -15rem; */
-    margin-bottom: -15rem;
+    position: relative;
+    bottom: -15rem;
+    z-index: 1;
     background-color: var(--white-color);
 
     
@@ -515,12 +515,57 @@ figure {
  /***** Start Footer Section *****/ 
  footer{
     background-color: var(--footer-bg-color);
+    padding-top: 15rem;
 
  }
 
  footer *{
     color: var(--white-color);
  }
+
+ footer .grid{
+    text-align: right;
+ }
+
+ .footer-suheading{
+    font-size: 2.2rem;
+    font-weight: 700;
+ }
+
+ .footer-1--div p{
+    margin: 1rem 0 3.2rem 0;
+ }
+
+ .footer-1--div{
+    text-align: left;
+    & .social-footer--icons{
+        display: flex;
+        gap: 2.4rem;
+    }
+
+
+    & .fa-brands{
+        width: 5rem;
+        aspect-ratio: 1;
+        background-color: var(--supporting-color);
+        color: var(--bnt-hover-bg-color);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s linear;
+
+        &:hover{
+            color: var(--supporting-color);
+            background-color: var(--bnt-hover-bg-color);
+            rotate: 360deg;
+        }
+        
+    }
+ }
+
+
+
   /***** End Footer Section *****/
  
 
